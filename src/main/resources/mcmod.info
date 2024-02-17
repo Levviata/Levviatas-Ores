@@ -1,0 +1,16 @@
+[
+{
+  "modid": "levviatasores",
+  "name": "Levviata's Ores",
+  "description": "Simple configurable ore mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Levviata"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
