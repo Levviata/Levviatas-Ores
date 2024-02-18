@@ -10,6 +10,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
+import java.util.Objects;
+
 public class BlockBase extends Block implements IHasModel {
     public BlockBase(String name, Material material, CreativeTabs tab) {
         super(material);
@@ -18,7 +20,7 @@ public class BlockBase extends Block implements IHasModel {
         setCreativeTab(tab);
 
         BlockInit.BLOCKS.add(this);
-        ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));
     }
 
 

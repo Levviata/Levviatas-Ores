@@ -3,7 +3,7 @@
     {
         "normal":
         {
-            "model": "levviatasores:block/ore_tin"
+            "model": "levviatasores:tin_ore"
         }
     }
 }

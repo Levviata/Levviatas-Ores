@@ -1,3 +1,6 @@
-item.ingot_tin.name=Tin Ingot
+item.tin_ingot.name=Tin Ingot
+item.platinum_ingot.name=Platinum Ingot
+item.bronze_ingot.name=Bronze Ingot
 
-tile.ore_tin.name=Tin Ore
+tile.tin_ore.name=Tin Ore
+tile.platinum_ore.name=Platinum Ore
