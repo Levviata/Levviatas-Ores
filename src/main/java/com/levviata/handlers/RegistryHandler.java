@@ -2,6 +2,7 @@ package com.levviata.handlers;
 
 import com.levviata.init.BlockInit;
 import com.levviata.init.ItemInit;
+import com.levviata.recipes.CraftingRecipes;
 import com.levviata.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -35,4 +36,14 @@ public class RegistryHandler {
             }
         }
     }
+    public static void preInit() {
+
+    }
+    public static void init() {
+        CraftingRecipes.init();
+    }
+    public static void postInit() {
+
+    }
+
 }

@@ -14,4 +14,5 @@ public class ItemInit {
     public static final Item TIN_INGOT = new ItemBase("tin_ingot", "ingotTin", CreativeTabs.MATERIALS);
     public static final Item BRONZE_INGOT = new ItemBase("bronze_ingot", "ingotBronze", CreativeTabs.MATERIALS);
     public static final Item PLATINUM_INGOT = new ItemBase("platinum_ingot", "ingotPlatinum", CreativeTabs.MATERIALS);
+    public static final Item TIN_AND_COPPER_POWDER = new ItemBase("tin_and_copper_powder", "", CreativeTabs.MATERIALS);
 }
