@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "levviatasores:raw_platinum"
+    }
+  },
+  "result": {
+    "item": "levviatasores:raw_platinum_block",
+    "count": 1
+  }
+}

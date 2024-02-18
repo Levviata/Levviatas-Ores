@@ -11,22 +11,20 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.Objects;
 import java.util.Random;
 
-public class BlockBase extends Block implements IHasModel {
-    private final Item droppedItem;
-
-    public BlockBase(String name, Material material, float hardness, float resistance, String tool, int harvestLevel, CreativeTabs tab, Item droppedItem) {
+public class OreBlockBase extends Block implements IHasModel {
+    public OreBlockBase(String name, Material material, float hardness, int harvestLevel) {
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(tab);
+        setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         setHardness(hardness);
-        setResistance(resistance);
-        setHarvestLevel(tool, harvestLevel);
-        this.droppedItem = droppedItem;
+        setResistance(6);
+        setHarvestLevel("pickaxe", harvestLevel);
 
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));
@@ -35,15 +33,5 @@ public class BlockBase extends Block implements IHasModel {
     @Override
     public void registerModels() {
         Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-    }
-
-    @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return droppedItem;
-    }
-
-    @Override
-    public int quantityDropped(Random random) {
-        return 1; // Adjust as needed
     }
 }

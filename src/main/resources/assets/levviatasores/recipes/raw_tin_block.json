@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "levviatasores:raw_tin"
+    }
+  },
+  "result": {
+    "item": "levviatasores:raw_tin_block",
+    "count": 1
+  }
+}

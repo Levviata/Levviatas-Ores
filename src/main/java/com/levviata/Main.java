@@ -3,6 +3,7 @@ package com.levviata;
 import com.levviata.proxy.CommonProxy;
 import com.levviata.recipes.CraftingRecipes;
 import com.levviata.util.Reference;
+import com.levviata.util.compat.oreDictionaryCompat;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -22,7 +23,9 @@ public class Main {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+
         CraftingRecipes.init();
+        oreDictionaryCompat.registerOres();
     }
 
     @Mod.EventHandler

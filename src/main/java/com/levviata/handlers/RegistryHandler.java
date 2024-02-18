@@ -4,6 +4,7 @@ import com.levviata.init.BlockInit;
 import com.levviata.init.ItemInit;
 import com.levviata.recipes.CraftingRecipes;
 import com.levviata.util.IHasModel;
+import com.levviata.util.compat.oreDictionaryCompat;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -12,12 +13,23 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod.EventBusSubscriber
 public class RegistryHandler {
     @SubscribeEvent
     public static void onItemRegister(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
+
+        /*if(!OreDictionary.doesOreNameExist("ingotCopper")) {
+            event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
+        }
+        else
+            for (Item item : ItemInit.ITEMS) {
+                if (item != ItemInit.COPPER_INGOT) {
+                    event.getRegistry().register(item);
+                }
+            }*/
     }
     @SubscribeEvent
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
@@ -37,13 +49,12 @@ public class RegistryHandler {
         }
     }
     public static void preInit() {
-
     }
     public static void init() {
         CraftingRecipes.init();
+        oreDictionaryCompat.registerOres();
     }
     public static void postInit() {
-
     }
 
 }

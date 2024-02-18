@@ -1,0 +1,5 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "levviatasores:blocks/raw_copper_block"}
+}

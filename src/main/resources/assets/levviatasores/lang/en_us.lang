@@ -1,6 +1,19 @@
 item.tin_ingot.name=Tin Ingot
+item.copper_ingot.name=Copper Ingot
 item.platinum_ingot.name=Platinum Ingot
 item.bronze_ingot.name=Bronze Ingot
 
+item.raw_tin.name=Raw Tin
+item.raw_copper.name=Raw Copper
+item.raw_platinum.name=Raw Platinum
+
+item.tin_and_copper_powder.name= Tin and Copper Powder
+
 tile.tin_ore.name=Tin Ore
+tile.copper_ore.name=Copper Ore
 tile.platinum_ore.name=Platinum Ore
+
+tile.raw_tin_block.name=Block of Raw Tin
+tile.raw_copper_block.name=Block of Raw Copper
+tile.raw_platinum_block.name=Block of Raw Platinum
+
