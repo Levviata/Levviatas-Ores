@@ -30,9 +30,9 @@ public class CraftingRecipes {
 
         //Ore Full Blocks
 
-        ItemStack raw_tin = new ItemStack(ItemInit.RAW_TIN, 9);
-        ItemStack raw_copper = new ItemStack(ItemInit.RAW_COPPER, 9);
-        ItemStack raw_platinum = new ItemStack(ItemInit.RAW_PLATINUM, 9);
+        ItemStack raw_tin_nine = new ItemStack(ItemInit.RAW_TIN, 9);
+        ItemStack raw_copper_nine = new ItemStack(ItemInit.RAW_COPPER, 9);
+        ItemStack raw_platinum_nine = new ItemStack(ItemInit.RAW_PLATINUM, 9);
 
         Ingredient tinBlockIngredient = Ingredient.fromStacks(new ItemStack(BlockInit.RAW_TIN_BLOCK));
         Ingredient copperBlockIngredient = Ingredient.fromStacks(new ItemStack(BlockInit.RAW_COPPER_BLOCK));
@@ -41,29 +41,52 @@ public class CraftingRecipes {
         GameRegistry.addShapelessRecipe(
                 new ResourceLocation("raw_tin"),
                 null,
-                raw_tin,
+                raw_tin_nine,
                 tinBlockIngredient);
 
         GameRegistry.addShapelessRecipe(
                 new ResourceLocation("raw_copper"),
                 null,
-                raw_copper,
+                raw_copper_nine,
                 copperBlockIngredient);
 
         GameRegistry.addShapelessRecipe(
                 new ResourceLocation("raw_platinum"),
                 null,
-                raw_platinum,
+                raw_platinum_nine,
                 platinumBlockIngredient);
 
         //Ore Blocks
+        ItemStack raw_tin = new ItemStack(ItemInit.RAW_TIN);
+        ItemStack raw_copper = new ItemStack(ItemInit.RAW_COPPER);
+        ItemStack raw_platinum = new ItemStack(ItemInit.RAW_PLATINUM);
 
         ItemStack tin_ore = new ItemStack(BlockInit.TIN_ORE);
         ItemStack copper_ore = new ItemStack(BlockInit.COPPER_ORE);
         ItemStack platinum_ore = new ItemStack(BlockInit.PLATINUM_ORE);
 
-        GameRegistry.addSmelting(tin_ore, raw_tin, 0.7F);
-        GameRegistry.addSmelting(copper_ore, raw_copper, 0.7F);
-        GameRegistry.addSmelting(platinum_ore, raw_platinum, 0.7F);
+        ItemStack raw_tin_block = new ItemStack(BlockInit.RAW_TIN_BLOCK);
+        ItemStack raw_copper_block = new ItemStack(BlockInit.RAW_COPPER_BLOCK);
+        ItemStack raw_platinum_block = new ItemStack(BlockInit.RAW_PLATINUM_BLOCK);
+
+        ItemStack tin_ingot_nine = new ItemStack(ItemInit.TIN_INGOT, 9);
+        ItemStack copper_ingot_nine = new ItemStack(ItemInit.COPPER_INGOT, 9);
+        ItemStack platinum_ingot_nine = new ItemStack(ItemInit.PLATINUM_INGOT, 9);
+
+        ItemStack tin_ingot = new ItemStack(ItemInit.TIN_INGOT);
+        ItemStack copper_ingot = new ItemStack(ItemInit.COPPER_INGOT);
+        ItemStack platinum_ingot = new ItemStack(ItemInit.PLATINUM_INGOT);
+
+        GameRegistry.addSmelting(tin_ore, tin_ingot, 0.7F);
+        GameRegistry.addSmelting(copper_ore, copper_ingot, 0.7F);
+        GameRegistry.addSmelting(platinum_ore, platinum_ingot, 0.7F);
+
+        GameRegistry.addSmelting(raw_tin, tin_ingot, 0.7F);
+        GameRegistry.addSmelting(raw_copper, copper_ingot, 0.7F);
+        GameRegistry.addSmelting(raw_platinum, platinum_ingot, 0.7F);
+
+        GameRegistry.addSmelting(raw_tin_block, tin_ingot_nine, 4.0F);
+        GameRegistry.addSmelting(raw_copper_block, copper_ingot_nine, 4.0F);
+        GameRegistry.addSmelting(raw_platinum_block, platinum_ingot_nine, 4.0F);
     }
 }
