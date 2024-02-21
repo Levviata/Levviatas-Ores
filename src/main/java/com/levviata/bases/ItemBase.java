@@ -3,7 +3,6 @@ package com.levviata.bases;
 import com.levviata.Main;
 import com.levviata.init.ItemInit;
 import com.levviata.util.IHasModel;
-import com.oblivioussp.spartanweaponry.api.ToolMaterialEx;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
@@ -20,6 +19,6 @@ public class ItemBase extends Item implements IHasModel {
     }
     @Override
     public void registerModels() {
-        Main.proxy.registerItemRenderer(this, 0, "inventory");
+        Main.proxy.registerModel(this, 0, "inventory");
     }
 }

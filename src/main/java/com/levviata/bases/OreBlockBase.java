@@ -6,15 +6,11 @@ import com.levviata.init.ItemInit;
 import com.levviata.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.Objects;
-import java.util.Random;
 
 public class OreBlockBase extends Block implements IHasModel {
     public OreBlockBase(String name, Material material, float hardness, int harvestLevel) {
@@ -32,6 +28,6 @@ public class OreBlockBase extends Block implements IHasModel {
 
     @Override
     public void registerModels() {
-        Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+        Main.proxy.registerModel(Item.getItemFromBlock(this), 0, "inventory");
     }
 }

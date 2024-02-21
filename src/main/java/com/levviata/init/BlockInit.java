@@ -13,7 +13,6 @@ import java.util.List;
 
 public class BlockInit {
     public static final List<Block> BLOCKS = new ArrayList<>();
-
     public static final Block TIN_ORE = new GenericOreBase(
             "tin_ore", Material.IRON, 3, 2, ItemInit.RAW_TIN);
     public static final Block COPPER_ORE = new GenericOreBase(

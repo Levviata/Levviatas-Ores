@@ -5,7 +5,7 @@ import com.levviata.init.ItemInit;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class oreDictionaryCompat {
-    public static void registerOres() {
+    public static void init() {
         OreDictionary.registerOre("ingotTin", ItemInit.TIN_INGOT);
         OreDictionary.registerOre("ingotCopper", ItemInit.COPPER_INGOT);
         OreDictionary.registerOre("ingotPlatinum", ItemInit.PLATINUM_INGOT);

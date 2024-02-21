@@ -1,5 +1,6 @@
 package com.levviata;
 
+import com.levviata.config.Config;
 import com.levviata.proxy.CommonProxy;
 import com.levviata.recipes.CraftingRecipes;
 import com.levviata.util.Reference;
@@ -12,23 +13,28 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
+import static com.levviata.Main.GUIFACTORY;
+
+@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, guiFactory = GUIFACTORY)
 public class Main {
     @Mod.Instance
     public static Main instance;
     @SidedProxy(clientSide = "com.levviata.proxy.ClientProxy", serverSide = "com.levviata.proxy.CommonProxy")
     public static CommonProxy proxy;
+    public static final String GUIFACTORY = "com.levviata.config.GuiFactory";
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+
+        Config.clientPreInit();
+        Config.preInit();
         GameRegistry.registerWorldGenerator(new WorldGenOres(), 4);
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-
         CraftingRecipes.init();
-        oreDictionaryCompat.registerOres();
+        oreDictionaryCompat.init();
     }
 
     @Mod.EventHandler
