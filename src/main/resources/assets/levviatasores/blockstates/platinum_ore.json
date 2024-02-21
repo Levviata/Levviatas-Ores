@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "normal":
-        {
-            "model": "levviatasores:platinum_ore"
-        }
+        "variant=platinum_ore": { "model": "levviatasores:block/platinum_ore" },
+        "variant=granite_platinum_ore": { "model": "levviatasores:block/granite_platinum_ore" },
+        "variant=diorite_platinum_ore": { "model": "levviatasores:block/diorite_platinum_ore" },
+        "variant=andesite_platinum_ore": { "model": "levviatasores:block/andesite_platinum_ore" }
     }
 }

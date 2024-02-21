@@ -1,0 +1,5 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "levviatasores:blocks/diorite_copper_ore"}
+}

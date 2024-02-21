@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "normal":
-        {
-            "model": "levviatasores:copper_ore"
-        }
+        "variant=copper_ore": { "model": "levviatasores:block/copper_ore" },
+        "variant=granite_copper_ore": { "model": "levviatasores:block/granite_copper_ore" },
+        "variant=diorite_copper_ore": { "model": "levviatasores:block/diorite_copper_ore" },
+        "variant=andesite_copper_ore": { "model": "levviatasores:block/andesite_copper_ore" }
     }
 }
