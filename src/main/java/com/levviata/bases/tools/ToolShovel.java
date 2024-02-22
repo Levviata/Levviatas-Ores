@@ -1,15 +1,15 @@
-package com.levviata.bases;
+package com.levviata.bases.tools;
 
 import com.levviata.Main;
 import com.levviata.init.ItemInit;
 import com.levviata.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemSpade;
 
-public class ToolHoe extends ItemHoe implements IHasModel {
+public class ToolShovel extends ItemSpade implements IHasModel {
 
-    public ToolHoe(String name, Item.ToolMaterial material) {
+    public ToolShovel(String name, Item.ToolMaterial material) {
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);

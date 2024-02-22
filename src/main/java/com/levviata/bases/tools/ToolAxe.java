@@ -1,4 +1,4 @@
-package com.levviata.bases;
+package com.levviata.bases.tools;
 
 import java.util.Set;
 

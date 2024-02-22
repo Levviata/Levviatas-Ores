@@ -20,8 +20,10 @@ public class EnumHandler {
         private static EnumType[] META_LOOKUP = new EnumType[values().length];
         private final String name, unlocalizedName;
         private final int meta;
-
         private EnumType(int meta, String name){
+            this(meta, name, name);
+        }
+        private EnumType(int meta, String name, String unlocalizedName){
             this.name = name;
             this.unlocalizedName = name;
             this.meta = meta;
@@ -51,4 +53,5 @@ public class EnumHandler {
             }
         }
     }
+
 }

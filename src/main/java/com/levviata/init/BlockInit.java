@@ -1,7 +1,7 @@
 package com.levviata.init;
 
-import com.levviata.bases.GenericOreBase;
-import com.levviata.bases.OreBlockBase;
+import com.levviata.bases.blocks.GenericOreBase;
+import com.levviata.bases.blocks.OreBlockBase;
 import com.levviata.handlers.EnumHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

@@ -1,18 +1,19 @@
-package com.levviata.bases;
+package com.levviata.bases.tools;
 
 import com.levviata.Main;
 import com.levviata.init.ItemInit;
 import com.levviata.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
 
-public class ToolPickaxe extends ItemPickaxe implements IHasModel {
+public class ToolSword extends ItemSword implements IHasModel {
 
-    public ToolPickaxe(String name, ToolMaterial material) {
+    public ToolSword(String name, Item.ToolMaterial material) {
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.TOOLS);
+        setCreativeTab(CreativeTabs.COMBAT);
 
         ItemInit.ITEMS.add(this);
     }
@@ -20,5 +21,5 @@ public class ToolPickaxe extends ItemPickaxe implements IHasModel {
     public void registerModels() {
         Main.proxy.registerModel(this, 0, "inventory");
     }
-    }
+}
 

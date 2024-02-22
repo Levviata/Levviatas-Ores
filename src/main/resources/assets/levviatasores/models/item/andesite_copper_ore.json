@@ -1,7 +1,3 @@
 {
-    "parent": "item/generated",
-    "textures":
-    {
-        "layer0": "levviatasores:items/andesite_copper_ore"
-    }
+    "parent": "levviatasores:block/andesite_copper_ore"
 }

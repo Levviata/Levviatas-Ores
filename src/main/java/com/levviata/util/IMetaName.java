@@ -1,4 +1,4 @@
-package com.levviata.util.compat;
+package com.levviata.util;
 
 import net.minecraft.item.ItemStack;
 

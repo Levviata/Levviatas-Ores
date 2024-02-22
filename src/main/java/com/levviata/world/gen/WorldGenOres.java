@@ -1,8 +1,7 @@
 package com.levviata.world.gen;
 
-import com.levviata.bases.GenericOreBase;
+import com.levviata.bases.blocks.GenericOreBase;
 import com.levviata.handlers.EnumHandler;
-import com.levviata.init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -13,13 +12,10 @@ import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import scala.Int;
 
 import java.util.Random;
 
 import static com.levviata.init.BlockInit.*;
-import static com.levviata.util.WorldGenUtils.preferMaxY;
-import static com.levviata.util.WorldGenUtils.preferMinY;
 
 public class WorldGenOres implements IWorldGenerator {
     private final int bounds = 16;
