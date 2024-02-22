@@ -1,7 +1,7 @@
 package com.levviata.world.gen;
 
-import com.levviata.bases.blocks.GenericOreBase;
 import com.levviata.handlers.EnumHandler;
+import com.levviata.init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -15,6 +15,9 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 import java.util.Random;
 
+import static com.levviata.bases.blocks.ores.CopperOreBase.COPPER_VARIANT;
+import static com.levviata.bases.blocks.ores.PlatinumOreBase.PLATINUM_VARIANT;
+import static com.levviata.bases.blocks.ores.TinOreBase.TIN_VARIANT;
 import static com.levviata.init.BlockInit.*;
 
 public class WorldGenOres implements IWorldGenerator {
@@ -90,20 +93,20 @@ public class WorldGenOres implements IWorldGenerator {
 
                 if (ore == COPPER_ORE) {
                     WorldGenerator generator = new WorldGenMinable(
-                            COPPER_ORE.getDefaultState().withProperty(GenericOreBase.VARIANT,
-                                    EnumHandler.EnumType.GRANITE_COPPER_ORE), size);
+                            COPPER_ORE.getDefaultState().withProperty(COPPER_VARIANT,
+                                    EnumHandler.EnumCopper.GRANITE_COPPER_ORE), size);
                     generator.generate(world, random, pos);
                 }
                 if (ore == TIN_ORE) {
                     WorldGenerator generator = new WorldGenMinable(
-                            TIN_ORE.getDefaultState().withProperty(GenericOreBase.VARIANT,
-                                    EnumHandler.EnumType.GRANITE_TIN_ORE), size);
+                            TIN_ORE.getDefaultState().withProperty(TIN_VARIANT,
+                                    EnumHandler.EnumTin.GRANITE_TIN_ORE), size);
                     generator.generate(world, random, pos);
                 }
                 if (ore == PLATINUM_ORE) {
                     WorldGenerator generator = new WorldGenMinable(
-                            PLATINUM_ORE.getDefaultState().withProperty(GenericOreBase.VARIANT,
-                                    EnumHandler.EnumType.GRANITE_PLATINUM_ORE), size);
+                            PLATINUM_ORE.getDefaultState().withProperty(PLATINUM_VARIANT,
+                                    EnumHandler.EnumPlatinum.GRANITE_PLATINUM_ORE), size);
                     generator.generate(world, random, pos);
                 }
             }
@@ -120,20 +123,20 @@ public class WorldGenOres implements IWorldGenerator {
 
                 if (ore == COPPER_ORE) {
                     WorldGenerator generator = new WorldGenMinable(
-                            COPPER_ORE.getDefaultState().withProperty(GenericOreBase.VARIANT,
-                                    EnumHandler.EnumType.DIORITE_COPPER_ORE), size);
+                            COPPER_ORE.getDefaultState().withProperty(COPPER_VARIANT,
+                                    EnumHandler.EnumCopper.DIORITE_COPPER_ORE), size);
                     generator.generate(world, random, pos);
                 }
                 if (ore == TIN_ORE) {
                     WorldGenerator generator = new WorldGenMinable(
-                            TIN_ORE.getDefaultState().withProperty(GenericOreBase.VARIANT,
-                                    EnumHandler.EnumType.DIORITE_TIN_ORE), size);
+                            TIN_ORE.getDefaultState().withProperty(TIN_VARIANT,
+                                    EnumHandler.EnumTin.DIORITE_TIN_ORE), size);
                     generator.generate(world, random, pos);
                 }
                 if (ore == PLATINUM_ORE) {
                     WorldGenerator generator = new WorldGenMinable(
-                            PLATINUM_ORE.getDefaultState().withProperty(GenericOreBase.VARIANT,
-                                    EnumHandler.EnumType.DIORITE_PLATINUM_ORE), size);
+                            PLATINUM_ORE.getDefaultState().withProperty(PLATINUM_VARIANT,
+                                    EnumHandler.EnumPlatinum.DIORITE_PLATINUM_ORE), size);
                     generator.generate(world, random, pos);
                 }
             }
@@ -150,20 +153,20 @@ public class WorldGenOres implements IWorldGenerator {
 
                 if (ore == COPPER_ORE) {
                     WorldGenerator generator = new WorldGenMinable(
-                            COPPER_ORE.getDefaultState().withProperty(GenericOreBase.VARIANT,
-                                    EnumHandler.EnumType.ANDESITE_COPPER_ORE), size);
+                            COPPER_ORE.getDefaultState().withProperty(COPPER_VARIANT,
+                                    EnumHandler.EnumCopper.ANDESITE_COPPER_ORE), size);
                     generator.generate(world, random, pos);
                 }
                 if (ore == TIN_ORE) {
                     WorldGenerator generator = new WorldGenMinable(
-                            TIN_ORE.getDefaultState().withProperty(GenericOreBase.VARIANT,
-                                    EnumHandler.EnumType.ANDESITE_TIN_ORE), size);
+                            TIN_ORE.getDefaultState().withProperty(TIN_VARIANT,
+                                    EnumHandler.EnumTin.ANDESITE_TIN_ORE), size);
                     generator.generate(world, random, pos);
                 }
                 if (ore == PLATINUM_ORE) {
                     WorldGenerator generator = new WorldGenMinable(
-                            PLATINUM_ORE.getDefaultState().withProperty(GenericOreBase.VARIANT,
-                                    EnumHandler.EnumType.ANDESITE_PLATINUM_ORE), size);
+                            PLATINUM_ORE.getDefaultState().withProperty(PLATINUM_VARIANT,
+                                    EnumHandler.EnumPlatinum.ANDESITE_PLATINUM_ORE), size);
                     generator.generate(world, random, pos);
                 }
             }

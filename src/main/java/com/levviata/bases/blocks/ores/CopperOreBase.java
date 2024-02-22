@@ -1,6 +1,7 @@
-package com.levviata.bases.blocks;
+package com.levviata.bases.blocks.ores;
 
-/*import com.levviata.Main;
+import com.levviata.Main;
+import com.levviata.bases.blocks.ItemBlockVariant;
 import com.levviata.handlers.EnumHandler;
 import com.levviata.init.BlockInit;
 import com.levviata.init.ItemInit;
@@ -24,11 +25,12 @@ import net.minecraft.world.World;
 import java.util.Objects;
 import java.util.Random;
 
-public class GenericOreBase extends Block implements IHasModel, IMetaName {
-    private final PropertyEnum property;
+public class CopperOreBase extends Block implements IHasModel, IMetaName {
+    public static PropertyEnum<EnumHandler.EnumCopper> COPPER_VARIANT = PropertyEnum.create(
+            "copper_variant", EnumHandler.EnumCopper.class);
     private final Item droppedItem;
     private String name;
-    public GenericOreBase(String name, Material material, float hardness, int harvestLevel, Item droppedItem, Enum type, PropertyEnum property) {
+    public CopperOreBase(String name, Material material, float hardness, int harvestLevel, Item droppedItem) {
         super(material);
 
         setUnlocalizedName(name);
@@ -37,11 +39,10 @@ public class GenericOreBase extends Block implements IHasModel, IMetaName {
         setHardness(hardness);
         setResistance(3);
         setHarvestLevel("pickaxe", harvestLevel);
-        setDefaultState(this.blockState.getBaseState().withProperty(property, type));
+        setDefaultState(this.blockState.getBaseState().withProperty(COPPER_VARIANT, EnumHandler.EnumCopper.COPPER_ORE));
         this.droppedItem = droppedItem;
 
         this.name = name;
-        this.property = property;
         //type = typeReference;
 
         BlockInit.BLOCKS.add(this);
@@ -50,17 +51,17 @@ public class GenericOreBase extends Block implements IHasModel, IMetaName {
 
     @Override
     public int damageDropped(IBlockState state) {
-        return ((EnumHandler.EnumCopper)state.getValue(property)).getMeta();
+        return ((EnumHandler.EnumCopper)state.getValue(COPPER_VARIANT)).getMeta();
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        return ((EnumHandler.EnumCopper)state.getValue(property)).getMeta();
+        return ((EnumHandler.EnumCopper)state.getValue(COPPER_VARIANT)).getMeta();
     }
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(property, EnumHandler.EnumCopper.byMetadata(meta));
+        return this.getDefaultState().withProperty(COPPER_VARIANT, EnumHandler.EnumCopper.byMetadata(meta));
     }
 
     @Override
@@ -75,7 +76,7 @@ public class GenericOreBase extends Block implements IHasModel, IMetaName {
         }
     }
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[] {property});
+        return new BlockStateContainer(this, new IProperty[] {COPPER_VARIANT});
     }
 
     @Override
@@ -100,4 +101,4 @@ public class GenericOreBase extends Block implements IHasModel, IMetaName {
         return 1; // Adjust as needed
     }
 
-}*/
+}
