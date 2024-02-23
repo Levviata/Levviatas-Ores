@@ -1,20 +1,20 @@
-package com.levviata.bases;
+package com.levviata.bases.tools;
 
 import com.levviata.Main;
 import com.levviata.init.ItemInit;
 import com.levviata.utils.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraftforge.oredict.OreDictionary;
+import net.minecraft.item.ItemSword;
 
-public class ItemBase extends Item implements IHasModel {
-    public ItemBase(String name,  String oreDict, CreativeTabs tab) {
+public class ToolSword extends ItemSword implements IHasModel {
+
+    public ToolSword(String name, Item.ToolMaterial material) {
+        super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(tab);
+        setCreativeTab(CreativeTabs.COMBAT);
 
-        if (oreDict != null)
-                OreDictionary.registerOre(oreDict, this);
         ItemInit.ITEMS.add(this);
     }
     @Override
@@ -22,3 +22,4 @@ public class ItemBase extends Item implements IHasModel {
         Main.proxy.registerModel(this, 0, "inventory");
     }
 }
+

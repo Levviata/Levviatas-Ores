@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BAB",
+    "AAA"
+  ],
+  "key": {
+    "B": {
+      "item": "levviatasores:copper_ingot"
+    },
+    "A": {
+      "item": "minecraft:air"
+    }
+  },
+  "result": {
+    "item": "levviatasores:copper_helmet",
+    "count": 1
+  }
+}

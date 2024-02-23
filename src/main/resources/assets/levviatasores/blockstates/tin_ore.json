@@ -1,9 +1,9 @@
 {
-    "variants": 
+    "variants":
     {
-        "variant=tin_ore": { "model": "levviatasores:block/tin_ore" },
-        "variant=granite_tin_ore": { "model": "levviatasores:block/granite_tin_ore" },
-        "variant=diorite_tin_ore": { "model": "levviatasores:block/diorite_tin_ore" },
-        "variant=andesite_tin_ore": { "model": "levviatasores:block/andesite_tin_ore" }
+        "normal":
+        {
+            "model": "levviatasores:tin_ore"
+        }
     }
 }

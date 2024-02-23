@@ -1,0 +1,5 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "levviatasores:blocks/tin_ore_granite"}
+}

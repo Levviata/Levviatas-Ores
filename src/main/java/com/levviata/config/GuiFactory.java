@@ -1,6 +1,6 @@
 package com.levviata.config;
 
-import com.levviata.util.Reference;
+import com.levviata.utils.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;

@@ -1,17 +1,14 @@
 package com.levviata.init;
 
 import com.levviata.bases.*;
-import com.levviata.util.Reference;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
+import com.levviata.bases.tools.*;
+import com.levviata.utils.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
-import net.minecraft.util.SoundEvent;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,16 +47,16 @@ public class ItemInit {
     public static final Item.ToolMaterial TOOl_PLATINUM = EnumHelper.addToolMaterial(
             "tool_platinum",
             2,
-            450,
+            625,
             7.0F,
-            1.35F,
+            2.5F,
             18);
     public static final ItemArmor.ArmorMaterial ARMOR_PLATINUM = EnumHelper.addArmorMaterial(
             "armor_platinum",
             Reference.MODID + ":platinum",
             23,
             new int[]{3, 6, 6, 2},
-            14,
+            18,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON,
             0.0F);
     public static final Item TIN_INGOT = new ItemBase("tin_ingot", "ingotTin", CreativeTabs.MATERIALS);

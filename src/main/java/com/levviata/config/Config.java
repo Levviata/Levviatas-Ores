@@ -1,21 +1,17 @@
 package com.levviata.config;
 
-import com.levviata.util.Reference;
-import net.minecraft.block.Block;
+import com.levviata.utils.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.common.config.Property;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.io.File;
-import java.util.List;
 
 import static com.levviata.config.BlockConfig.*;
 import static com.levviata.config.ItemConfig.*;
-import static com.levviata.init.BlockInit.BLOCKS;
 
 public class Config {
 	public static final String CATEGORY_NAME_ITEMS = "category_items";
