@@ -10,7 +10,8 @@
       "item": "minecraft:stick"
     },
     "B": {
-      "item": "levviatasores:copper_ingot"
+      "type": "forge:ore_dict",
+      "ore": "ingotCopper"
     }
   },
   "result": {
