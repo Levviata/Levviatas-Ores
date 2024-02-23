@@ -103,25 +103,30 @@ public class CraftingRecipes {
         ItemStack platinum_leggings = new ItemStack(ItemInit.PLATINUM_LEGGINGS);
         ItemStack platinum_boots = new ItemStack(ItemInit.PLATINUM_BOOTS);
 
+        int amountHelmet = 3;
+        int amountChestplate = 4;
+        int amountLeggings = 4;
+        int amountBoots = 2;
+
         float xpHelmet = 4.5F;
         float xpChestplate = 7.0F;
         float xpLeggings = 6.0f;
         float xpBoots = 4.0f;
 
-        GameRegistry.addSmelting(copper_helmet, new ItemStack(ItemInit.COPPER_INGOT), xpHelmet);
-        GameRegistry.addSmelting(copper_chestplate, new ItemStack(ItemInit.COPPER_INGOT), xpChestplate);
-        GameRegistry.addSmelting(copper_leggings, new ItemStack(ItemInit.COPPER_INGOT), xpLeggings);
-        GameRegistry.addSmelting(copper_boots, new ItemStack(ItemInit.COPPER_INGOT), xpBoots);
+        GameRegistry.addSmelting(copper_helmet, new ItemStack(ItemInit.COPPER_INGOT, amountHelmet), xpHelmet);
+        GameRegistry.addSmelting(copper_chestplate, new ItemStack(ItemInit.COPPER_INGOT, amountChestplate), xpChestplate);
+        GameRegistry.addSmelting(copper_leggings, new ItemStack(ItemInit.COPPER_INGOT, amountLeggings), xpLeggings);
+        GameRegistry.addSmelting(copper_boots, new ItemStack(ItemInit.COPPER_INGOT, amountBoots), xpBoots);
 
-        GameRegistry.addSmelting(tin_helmet, new ItemStack(ItemInit.TIN_INGOT), xpHelmet);
-        GameRegistry.addSmelting(tin_chestplate, new ItemStack(ItemInit.TIN_INGOT), xpChestplate);
-        GameRegistry.addSmelting(tin_leggings, new ItemStack(ItemInit.TIN_INGOT), xpLeggings);
-        GameRegistry.addSmelting(tin_boots, new ItemStack(ItemInit.TIN_INGOT), xpBoots);
+        GameRegistry.addSmelting(tin_helmet, new ItemStack(ItemInit.TIN_INGOT, amountHelmet), xpHelmet);
+        GameRegistry.addSmelting(tin_chestplate, new ItemStack(ItemInit.TIN_INGOT, amountChestplate), xpChestplate);
+        GameRegistry.addSmelting(tin_leggings, new ItemStack(ItemInit.TIN_INGOT, amountLeggings), xpLeggings);
+        GameRegistry.addSmelting(tin_boots, new ItemStack(ItemInit.TIN_INGOT, amountBoots), xpBoots);
 
-        GameRegistry.addSmelting(platinum_helmet, new ItemStack(ItemInit.PLATINUM_INGOT), xpHelmet);
-        GameRegistry.addSmelting(platinum_chestplate, new ItemStack(ItemInit.PLATINUM_INGOT), xpChestplate);
-        GameRegistry.addSmelting(platinum_leggings, new ItemStack(ItemInit.PLATINUM_INGOT), xpLeggings);
-        GameRegistry.addSmelting(platinum_boots, new ItemStack(ItemInit.PLATINUM_INGOT), xpBoots);
+        GameRegistry.addSmelting(platinum_helmet, new ItemStack(ItemInit.PLATINUM_INGOT, amountHelmet), xpHelmet);
+        GameRegistry.addSmelting(platinum_chestplate, new ItemStack(ItemInit.PLATINUM_INGOT, amountChestplate), xpChestplate);
+        GameRegistry.addSmelting(platinum_leggings, new ItemStack(ItemInit.PLATINUM_INGOT, amountLeggings), xpLeggings);
+        GameRegistry.addSmelting(platinum_boots, new ItemStack(ItemInit.PLATINUM_INGOT, amountBoots), xpBoots);
 
         //Tools
         ItemStack copper_axe = new ItemStack(ItemInit.COPPER_AXE);
