@@ -1,37 +1,51 @@
 package com.levviata.init;
 
 
+import com.levviata.bases.blocks.GenericOreBase;
 import com.levviata.bases.blocks.OreBlockBase;
-import com.levviata.bases.blocks.ores.CopperOreBase;
-import com.levviata.bases.blocks.ores.PlatinumOreBase;
-import com.levviata.bases.blocks.ores.TinOreBase;
-import com.levviata.handlers.EnumHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyEnum;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.levviata.bases.blocks.ores.CopperOreBase.COPPER_VARIANT;
-import static com.levviata.bases.blocks.ores.PlatinumOreBase.PLATINUM_VARIANT;
-import static com.levviata.bases.blocks.ores.TinOreBase.TIN_VARIANT;
 
 public class BlockInit {
 
 
 
     public static final List<Block> BLOCKS = new ArrayList<>();
-    public static final Block TIN_ORE = new TinOreBase(
-            "tin_ore", Material.IRON, 3, 2, ItemInit.RAW_TIN);
-    public static final Block COPPER_ORE = new CopperOreBase(
-            "copper_ore", Material.IRON, 3, 2, ItemInit.RAW_COPPER);
-    public static final Block PLATINUM_ORE = new PlatinumOreBase(
-            "platinum_ore", Material.IRON, 5, 3, ItemInit.RAW_PLATINUM);
+    public static final Block TIN_ORE = new GenericOreBase(
+            "tin_ore", 3, 2, ItemInit.RAW_TIN);
+    public static final Block COPPER_ORE = new GenericOreBase(
+            "copper_ore", 3, 2, ItemInit.RAW_COPPER);
+    public static final Block PLATINUM_ORE = new GenericOreBase(
+            "platinum_ore", 5, 3, ItemInit.RAW_PLATINUM);
     public static final Block RAW_TIN_BLOCK = new OreBlockBase(
             "raw_tin_block", Material.IRON, 3, 2);
     public static final Block RAW_COPPER_BLOCK = new OreBlockBase(
             "raw_copper_block", Material.IRON, 3, 2);
     public static final Block RAW_PLATINUM_BLOCK = new OreBlockBase(
             "raw_platinum_block", Material.IRON, 5, 3);
+
+    //Variants
+    public static final Block COPPER_ORE_GRANITE = new GenericOreBase(
+            "copper_ore_granite", 3, 2, ItemInit.RAW_COPPER);
+    public static final Block TIN_ORE_GRANITE = new GenericOreBase(
+            "tin_ore_granite", 3, 2, ItemInit.RAW_TIN);
+    public static final Block PLATINUM_ORE_GRANITE = new GenericOreBase(
+            "platinum_ore_granite", 5, 3, ItemInit.RAW_PLATINUM);
+
+    public static final Block COPPER_ORE_ANDESITE = new GenericOreBase(
+            "copper_ore_andesite", 3, 2, ItemInit.RAW_COPPER);
+    public static final Block TIN_ORE_ANDESITE = new GenericOreBase(
+            "tin_ore_andesite",3, 2, ItemInit.RAW_TIN);
+    public static final Block PLATINUM_ORE_ANDESITE = new GenericOreBase(
+            "platinum_ore_andesite", 5, 3, ItemInit.RAW_PLATINUM);
+
+    public static final Block TIN_ORE_DIORITE = new GenericOreBase(
+            "tin_ore_diorite", 3, 2, ItemInit.RAW_TIN);
+    public static final Block COPPER_ORE_DIORITE = new GenericOreBase(
+            "copper_ore_diorite", 3, 2, ItemInit.RAW_COPPER);
+    public static final Block PLATINUM_ORE_DIORITE = new GenericOreBase(
+            "platinum_ore_diorite", 5, 3, ItemInit.RAW_PLATINUM);
 }

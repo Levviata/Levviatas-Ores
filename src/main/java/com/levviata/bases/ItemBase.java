@@ -2,7 +2,7 @@ package com.levviata.bases;
 
 import com.levviata.Main;
 import com.levviata.init.ItemInit;
-import com.levviata.util.IHasModel;
+import com.levviata.utils.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;

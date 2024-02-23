@@ -1,6 +1,6 @@
 package com.levviata.proxy;
 
-import com.levviata.util.Reference;
+import com.levviata.utils.Reference;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;

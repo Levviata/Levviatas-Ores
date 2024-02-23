@@ -53,6 +53,18 @@ tile.tin_ore.name=Tin Ore
 tile.copper_ore.name=Copper Ore
 tile.platinum_ore.name=Platinum Ore
 
+tile.tin_ore_granite.name=Granite Tin Ore
+tile.copper_ore_granite.name=Granite Copper Ore
+tile.platinum_ore_granite.name=Granite Platinum Ore
+
+tile.tin_ore_diorite.name=Diorite Tin Ore
+tile.copper_ore_diorite.name=Diorite Copper Ore
+tile.platinum_ore_diorite.name=Diorite Platinum Ore
+
+tile.tin_ore_andesite.name=Andesite Tin Ore
+tile.copper_ore_andesite.name=Andesite Copper Ore
+tile.platinum_ore_andesite.name=Andesite Platinum Ore
+
 tile.raw_tin_block.name=Block of Raw Tin
 tile.raw_copper_block.name=Block of Raw Copper
 tile.raw_platinum_block.name=Block of Raw Platinum

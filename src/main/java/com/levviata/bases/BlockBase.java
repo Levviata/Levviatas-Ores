@@ -3,7 +3,7 @@ package com.levviata.bases;
 import com.levviata.Main;
 import com.levviata.init.BlockInit;
 import com.levviata.init.ItemInit;
-import com.levviata.util.IHasModel;
+import com.levviata.utils.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

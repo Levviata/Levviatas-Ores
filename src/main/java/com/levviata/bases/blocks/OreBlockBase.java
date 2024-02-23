@@ -3,7 +3,7 @@ package com.levviata.bases.blocks;
 import com.levviata.Main;
 import com.levviata.init.BlockInit;
 import com.levviata.init.ItemInit;
-import com.levviata.util.IHasModel;
+import com.levviata.utils.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
 import java.util.Objects;
+import java.util.Random;
 
 public class OreBlockBase extends Block implements IHasModel {
 
@@ -30,6 +31,11 @@ public class OreBlockBase extends Block implements IHasModel {
 
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));
+    }
+
+    @Override
+    public int quantityDropped(Random random) {
+        return 1; // Adjust as needed
     }
     @Override
     public void registerModels() {

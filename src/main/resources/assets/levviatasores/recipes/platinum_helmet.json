@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BAB",
+    "AAA"
+  ],
+  "key": {
+    "B": {
+      "item": "levviatasores:platinum_ingot"
+    },
+    "A": {
+      "item": "minecraft:air"
+    }
+  },
+  "result": {
+    "item": "levviatasores:platinum_helmet",
+    "count": 1
+  }
+}
