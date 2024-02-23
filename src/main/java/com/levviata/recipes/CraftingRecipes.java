@@ -162,7 +162,7 @@ public class CraftingRecipes {
 
         GameRegistry.addSmelting(tin_axe, new ItemStack(ItemInit.TIN_INGOT, amountAxe), xpAxe);
         GameRegistry.addSmelting(tin_hoe, new ItemStack(ItemInit.TIN_INGOT, amountHoe), xpHoe);
-        GameRegistry.addSmelting(tin_pickaxe, new ItemStack(ItemInit.COPPER_INGOT, amountPickaxe), xpShovel);
+        GameRegistry.addSmelting(tin_pickaxe, new ItemStack(ItemInit.TIN_INGOT, amountPickaxe), xpShovel);
         GameRegistry.addSmelting(tin_shovel, new ItemStack(ItemInit.TIN_INGOT, amountShovel), xpShovel);
         GameRegistry.addSmelting(tin_sword, new ItemStack(ItemInit.TIN_INGOT), xpSword);
 
