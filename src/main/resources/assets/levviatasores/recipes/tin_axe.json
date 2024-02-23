@@ -1,17 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BBB",
-    "B B",
-    "   "
+    " BB",
+    " AB",
+    " A "
   ],
   "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
     "B": {
       "item": "levviatasores:tin_ingot"
     }
   },
   "result": {
-    "item": "levviatasores:tin_helmet",
+    "item": "levviatasores:tin_axe",
     "count": 1
   }
 }

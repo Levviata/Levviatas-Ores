@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BBB",
     "B B",
-    "   "
+    "BBB",
+    "BBB"
   ],
   "key": {
     "B": {
-      "item": "levviatasores:platinum_ingot"
+      "item": "levviatasores:tin_ingot"
     }
   },
   "result": {
-    "item": "levviatasores:platinum_helmet",
+    "item": "levviatasores:tin_chestplate",
     "count": 1
   }
 }

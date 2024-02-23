@@ -2,16 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "BBB",
-    "B B",
-    "   "
+    " A ",
+    " A "
   ],
   "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
     "B": {
       "item": "levviatasores:platinum_ingot"
     }
   },
   "result": {
-    "item": "levviatasores:platinum_helmet",
+    "item": "levviatasores:platinum_pickaxe",
     "count": 1
   }
 }

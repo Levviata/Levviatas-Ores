@@ -3,15 +3,15 @@
   "pattern": [
     "BBB",
     "B B",
-    "   "
+    "B B"
   ],
   "key": {
     "B": {
-      "item": "levviatasores:platinum_ingot"
+      "item": "levviatasores:tin_ingot"
     }
   },
   "result": {
-    "item": "levviatasores:platinum_helmet",
+    "item": "levviatasores:tin_leggings",
     "count": 1
   }
 }
