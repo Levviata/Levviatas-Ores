@@ -11,10 +11,11 @@ import static com.levviata.config.Config.CATEGORY_NAME_ITEMS;
 
 
 public class ItemConfig {
-    public static Property propEnableNewItems;
-    public static boolean enableNewItems = true;
+
     public static void configInitItems(Configuration config) {
-        propEnableNewItems = config.get(
+
+
+        /*propEnableNewItems = config.get(
                 CATEGORY_NAME_BLOCKS,
                 "enable_new_items",
                 enableNewItems,
@@ -24,6 +25,6 @@ public class ItemConfig {
 
         List<String> propItems = new ArrayList<String>();
         propItems.add(propEnableNewItems.getName());
-        config.setCategoryPropertyOrder(CATEGORY_NAME_ITEMS, propItems);
+        config.setCategoryPropertyOrder(CATEGORY_NAME_ITEMS, propItems);*/
     }
 }

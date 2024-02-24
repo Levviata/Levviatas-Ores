@@ -16,12 +16,16 @@ import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import java.util.Random;
 
 import static com.levviata.init.BlockInit.*;
 
 public class WorldGenOres implements IWorldGenerator {
+    public static void preInit() {
+        GameRegistry.registerWorldGenerator(new WorldGenOres(), 4);
+    }
     private final int bounds = 16;
 
     @Override

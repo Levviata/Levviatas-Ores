@@ -25,19 +25,19 @@ public class Main {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-
-        Config.clientPreInit();
         Config.preInit();
         GameRegistry.registerWorldGenerator(new WorldGenOres(), 4);
+
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        CraftingRecipes.init();
         oreDictionaryCompat.init();
+        CraftingRecipes.init();
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
+        proxy.postInit();
     }
 }

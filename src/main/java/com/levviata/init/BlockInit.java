@@ -1,6 +1,7 @@
 package com.levviata.init;
 
 
+import com.levviata.bases.BlockBase;
 import com.levviata.bases.blocks.GenericOreBase;
 import com.levviata.bases.blocks.OreBlockBase;
 import net.minecraft.block.Block;
@@ -10,8 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BlockInit {
-
-
 
     public static final List<Block> BLOCKS = new ArrayList<>();
     public static final Block TIN_ORE = new GenericOreBase(
