@@ -1,17 +1,17 @@
-gui.lo_configuration.mainTitle=Levviata's Ores Configuration
-gui.lo_configuration.ctgy.blocks=Block Options
-gui.lo_configuration.ctgy.blocks.tooltip=Category dedicated to blocks
-gui.lo_configuration.ctgy.items=Items Options
-gui.lo_configuration.ctgy.items.tooltip=Category dedicated to items
+gui.config.mainTitle=Levviata's Ores Configuration
+gui.config.ctgy.blocks=Block Options
+gui.config.ctgy.blocks.tooltip=Category dedicated to blocks
+gui.config.ctgy.items=Items Options
+gui.config.ctgy.items.tooltip=Category dedicated to items
 
-gui.lo_configuration.enable_tin_block=Enable Tin
-gui.lo_configuration.enable_copper_block=Enable Copper
-gui.lo_configuration.enable_platinum_block=Enable Platinum
+gui.config.enable_tin_block=Enable Tin
+gui.config.enable_copper_block=Enable Copper
+gui.config.enable_platinum_block=Enable Platinum
 
-gui.lo_configuration.enable_tin_item=Enable Tin
-gui.lo_configuration.enable_copper_item=Enable Copper
-gui.lo_configuration.enable_platinum_item=Enable Platinum
-gui.lo_configuration.enable_bronze_item=Enable Bronze
+gui.config.enable_tin_item=Enable Tin
+gui.config.enable_copper_item=Enable Copper
+gui.config.enable_platinum_item=Enable Platinum
+gui.config.enable_bronze_item=Enable Bronze
 
 item.tin_ingot.name=Tin Ingot
 item.copper_ingot.name=Copper Ingot
