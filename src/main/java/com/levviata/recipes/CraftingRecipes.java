@@ -16,9 +16,16 @@ public class CraftingRecipes {
 
         Ingredient copperIngotIngredient = CraftingHelper.getIngredient("ingotCopper");
         Ingredient tinIngotIngredient = CraftingHelper.getIngredient("ingotTin");
+        Ingredient rawCopperIngredient = CraftingHelper.getIngredient("rawCopper");
+        Ingredient rawTinIngredient = CraftingHelper.getIngredient("rawTin");
 
         GameRegistry.addShapelessRecipe(
                 new ResourceLocation("tin_and_copper_powder"),
+                null,
+                tin_and_copper_powder,
+                rawCopperIngredient, rawTinIngredient);
+        GameRegistry.addShapelessRecipe(
+                new ResourceLocation("tin_and_copper_powder_alt"),
                 null,
                 tin_and_copper_powder,
                 copperIngotIngredient, tinIngotIngredient);
@@ -103,6 +110,11 @@ public class CraftingRecipes {
         ItemStack platinum_leggings = new ItemStack(ItemInit.PLATINUM_LEGGINGS);
         ItemStack platinum_boots = new ItemStack(ItemInit.PLATINUM_BOOTS);
 
+        ItemStack bronze_helmet = new ItemStack(ItemInit.BRONZE_HELMET);
+        ItemStack bronze_chestplate = new ItemStack(ItemInit.BRONZE_CHESTPLATE);
+        ItemStack bronze_leggings = new ItemStack(ItemInit.BRONZE_LEGGINGS);
+        ItemStack bronze_boots = new ItemStack(ItemInit.BRONZE_BOOTS);
+
         int amountHelmet = 3;
         int amountChestplate = 4;
         int amountLeggings = 4;
@@ -128,6 +140,11 @@ public class CraftingRecipes {
         GameRegistry.addSmelting(platinum_leggings, new ItemStack(ItemInit.PLATINUM_INGOT, amountLeggings), xpLeggings);
         GameRegistry.addSmelting(platinum_boots, new ItemStack(ItemInit.PLATINUM_INGOT, amountBoots), xpBoots);
 
+        GameRegistry.addSmelting(bronze_helmet, new ItemStack(ItemInit.BRONZE_INGOT, amountHelmet), xpHelmet);
+        GameRegistry.addSmelting(bronze_chestplate, new ItemStack(ItemInit.BRONZE_INGOT, amountChestplate), xpChestplate);
+        GameRegistry.addSmelting(bronze_leggings, new ItemStack(ItemInit.BRONZE_INGOT, amountLeggings), xpLeggings);
+        GameRegistry.addSmelting(bronze_boots, new ItemStack(ItemInit.BRONZE_INGOT, amountBoots), xpBoots);
+
         //Tools
         ItemStack copper_axe = new ItemStack(ItemInit.COPPER_AXE);
         ItemStack copper_hoe = new ItemStack(ItemInit.COPPER_HOE);
@@ -146,6 +163,12 @@ public class CraftingRecipes {
         ItemStack platinum_pickaxe = new ItemStack(ItemInit.PLATINUM_PICKAXE);
         ItemStack platinum_shovel = new ItemStack(ItemInit.PLATINUM_SHOVEL);
         ItemStack platinum_sword = new ItemStack(ItemInit.PLATINUM_SWORD);
+
+        ItemStack bronze_axe = new ItemStack(ItemInit.BRONZE_AXE);
+        ItemStack bronze_hoe = new ItemStack(ItemInit.BRONZE_HOE);
+        ItemStack bronze_pickaxe = new ItemStack(ItemInit.BRONZE_PICKAXE);
+        ItemStack bronze_shovel = new ItemStack(ItemInit.BRONZE_SHOVEL);
+        ItemStack bronze_sword = new ItemStack(ItemInit.BRONZE_SWORD);
 
         int amountAxe = 2;
         int amountHoe = 1;
@@ -169,12 +192,18 @@ public class CraftingRecipes {
         GameRegistry.addSmelting(tin_hoe, new ItemStack(ItemInit.TIN_INGOT, amountHoe), xpHoe);
         GameRegistry.addSmelting(tin_pickaxe, new ItemStack(ItemInit.TIN_INGOT, amountPickaxe), xpShovel);
         GameRegistry.addSmelting(tin_shovel, new ItemStack(ItemInit.TIN_INGOT, amountShovel), xpShovel);
-        GameRegistry.addSmelting(tin_sword, new ItemStack(ItemInit.TIN_INGOT), xpSword);
+        GameRegistry.addSmelting(tin_sword, new ItemStack(ItemInit.TIN_INGOT, amountSword), xpSword);
 
         GameRegistry.addSmelting(platinum_axe, new ItemStack(ItemInit.PLATINUM_INGOT, amountAxe), xpAxe);
         GameRegistry.addSmelting(platinum_hoe, new ItemStack(ItemInit.PLATINUM_INGOT, amountHoe), xpHoe);
         GameRegistry.addSmelting(platinum_pickaxe, new ItemStack(ItemInit.PLATINUM_INGOT, amountPickaxe), xpPickaxe);
         GameRegistry.addSmelting(platinum_shovel, new ItemStack(ItemInit.PLATINUM_INGOT, amountShovel), xpShovel);
         GameRegistry.addSmelting(platinum_sword, new ItemStack(ItemInit.PLATINUM_INGOT, amountSword), xpSword);
+
+        GameRegistry.addSmelting(bronze_axe, new ItemStack(ItemInit.BRONZE_INGOT, amountAxe), xpAxe);
+        GameRegistry.addSmelting(bronze_hoe, new ItemStack(ItemInit.BRONZE_INGOT, amountHoe), xpHoe);
+        GameRegistry.addSmelting(bronze_pickaxe, new ItemStack(ItemInit.BRONZE_INGOT, amountPickaxe), xpPickaxe);
+        GameRegistry.addSmelting(bronze_shovel, new ItemStack(ItemInit.BRONZE_INGOT, amountShovel), xpShovel);
+        GameRegistry.addSmelting(bronze_sword, new ItemStack(ItemInit.BRONZE_INGOT, amountSword), xpSword);
     }
 }

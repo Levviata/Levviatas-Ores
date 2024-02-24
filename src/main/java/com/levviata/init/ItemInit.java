@@ -55,10 +55,26 @@ public class ItemInit {
             "armor_platinum",
             Reference.MODID + ":platinum",
             23,
-            new int[]{3, 6, 6, 2},
+            new int[]{3, 6, 7, 2},
             18,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON,
             0.0F);
+    public static final Item.ToolMaterial TOOl_BRONZE = EnumHelper.addToolMaterial(
+            "tool_bronze",
+            2,
+            300,
+            6.5F,
+            2.35F,
+            10);
+    public static final ItemArmor.ArmorMaterial ARMOR_BRONZE = EnumHelper.addArmorMaterial(
+            "armor_bronze",
+            Reference.MODID + ":bronze",
+            17,
+            new int[]{2, 6, 6, 3},
+            10,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            0.0F);
+
     public static final Item TIN_INGOT = new ItemBase("tin_ingot", "ingotTin", CreativeTabs.MATERIALS);
     public static final Item COPPER_INGOT = new ItemBase("copper_ingot", "ingotCopper", CreativeTabs.MATERIALS);
     public static final Item BRONZE_INGOT = new ItemBase("bronze_ingot", "ingotBronze", CreativeTabs.MATERIALS);
@@ -114,4 +130,20 @@ public class ItemInit {
     public static final Item PLATINUM_AXE = new ToolAxe("platinum_axe", TOOl_PLATINUM);
     public static final Item PLATINUM_SHOVEL = new ToolShovel("platinum_shovel", TOOl_PLATINUM);
     public static final Item PLATINUM_HOE = new ToolHoe("platinum_hoe", TOOl_PLATINUM);
+
+    public static final Item BRONZE_HELMET = new ArmorBase(
+            "bronze_helmet", ARMOR_BRONZE, 1, EntityEquipmentSlot.HEAD);
+    public static final Item BRONZE_CHESTPLATE = new ArmorBase(
+            "bronze_chestplate", ARMOR_BRONZE, 1, EntityEquipmentSlot.CHEST);
+    public static final Item BRONZE_LEGGINGS = new ArmorBase(
+            "bronze_leggings", ARMOR_BRONZE, 2, EntityEquipmentSlot.LEGS);
+    public static final Item BRONZE_BOOTS = new ArmorBase(
+            "bronze_boots", ARMOR_BRONZE, 1, EntityEquipmentSlot.FEET);
+    public static final Item BRONZE_SWORD = new ToolSword("bronze_sword", TOOl_BRONZE);
+    public static final Item BRONZE_PICKAXE = new ToolSword("bronze_pickaxe", TOOl_BRONZE);
+    public static final Item BRONZE_AXE = new ToolSword("bronze_axe", TOOl_BRONZE);
+    public static final Item BRONZE_SHOVEL = new ToolSword("bronze_shovel", TOOl_BRONZE);
+    public static final Item BRONZE_HOE = new ToolSword("bronze_hoe", TOOl_BRONZE);
+
+
 }

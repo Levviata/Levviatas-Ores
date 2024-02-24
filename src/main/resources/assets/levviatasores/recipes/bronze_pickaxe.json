@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    " A ",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    }
+  },
+  "result": {
+    "item": "levviatasores:bronze_pickaxe",
+    "count": 1
+  }
+}
