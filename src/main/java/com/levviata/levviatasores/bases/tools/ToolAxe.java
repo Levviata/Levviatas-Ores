@@ -14,6 +14,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class ToolAxe extends ItemTool implements IHasModel
 {
@@ -28,13 +29,18 @@ public class ToolAxe extends ItemTool implements IHasModel
 
         ItemInit.ITEMS.add(this);
     }
-
-    public float getStrVsBlock(ItemStack stack, IBlockState state)
-    {
-        Material material = state.getMaterial();
-        return material != Material.WOOD && material != Material.PLANTS && material != Material.VINE ? 1 : this.toolMaterial.getEfficiency();
+    @Override
+    public float getDestroySpeed(ItemStack stack, IBlockState state) {
+        Block block = state.getBlock();
+        int[] oreIDs = OreDictionary.getOreIDs(new ItemStack(block, 1, block.getMetaFromState(state)));
+        for (int id : oreIDs) {
+            String oreName = OreDictionary.getOreName(id);
+            if (oreName.startsWith("logWood") || oreName.startsWith("plankWood")) {
+                return this.toolMaterial.getEfficiency();
+            }
+        }
+        return super.getDestroySpeed(stack, state);
     }
-
     @Override
     public void registerModels()
     {

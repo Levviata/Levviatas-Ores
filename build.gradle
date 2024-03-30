@@ -13,9 +13,9 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0-rc-1'
+version = '1.0-rc-2'
 group = 'com.levviata.levviatasores' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'Levviatas-Ores'
+archivesBaseName = 'LevviatasOres'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 

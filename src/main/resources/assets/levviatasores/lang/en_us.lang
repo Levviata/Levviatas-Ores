@@ -1,17 +1,10 @@
 gui.config.mainTitle=Levviata's Ores Configuration
-gui.config.ctgy.blocks=Block Options
-gui.config.ctgy.blocks.tooltip=Category dedicated to blocks
-gui.config.ctgy.items=Items Options
-gui.config.ctgy.items.tooltip=Category dedicated to items
+gui.config.ctgy.world_gen=World Gen Options
+gui.config.ctgy.world_gen.tooltip=Category dedicated to world gen
 
-gui.config.enable_tin_block=Enable Tin
-gui.config.enable_copper_block=Enable Copper
-gui.config.enable_platinum_block=Enable Platinum
-
-gui.config.enable_tin_item=Enable Tin
-gui.config.enable_copper_item=Enable Copper
-gui.config.enable_platinum_item=Enable Platinum
-gui.config.enable_bronze_item=Enable Bronze
+gui.config.enable_tin=Enable Tin
+gui.config.enable_copper=Enable Copper
+gui.config.enable_platinum=Enable Platinum
 
 item.tin_ingot.name=Tin Ingot
 item.copper_ingot.name=Copper Ingot

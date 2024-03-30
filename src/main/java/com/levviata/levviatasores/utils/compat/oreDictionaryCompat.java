@@ -9,6 +9,7 @@ public class oreDictionaryCompat {
         OreDictionary.registerOre("ingotTin", ItemInit.TIN_INGOT);
         OreDictionary.registerOre("ingotCopper", ItemInit.COPPER_INGOT);
         OreDictionary.registerOre("ingotPlatinum", ItemInit.PLATINUM_INGOT);
+        OreDictionary.registerOre("ingotBronze", ItemInit.BRONZE_INGOT);
 
         OreDictionary.registerOre("oreTin", BlockInit.TIN_ORE);
         OreDictionary.registerOre("oreCopper", BlockInit.COPPER_ORE);

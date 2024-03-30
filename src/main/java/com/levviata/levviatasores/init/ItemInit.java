@@ -3,11 +3,13 @@ package com.levviata.levviatasores.init;
 import com.levviata.levviatasores.bases.*;
 import com.levviata.levviatasores.bases.tools.*;
 import com.levviata.levviatasores.utils.Reference;
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.common.util.EnumHelper;
 
 import java.util.ArrayList;
@@ -25,7 +27,7 @@ public class ItemInit {
             "armor_copper",
             Reference.MODID + ":copper",
             7,
-            new int[]{1, 4, 5, 2},
+            new int[]{2, 4, 4, 2},
             15,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON,
             0.0F);
@@ -140,10 +142,29 @@ public class ItemInit {
     public static final Item BRONZE_BOOTS = new ArmorBase(
             "bronze_boots", ARMOR_BRONZE, 1, EntityEquipmentSlot.FEET);
     public static final Item BRONZE_SWORD = new ToolSword("bronze_sword", TOOl_BRONZE);
-    public static final Item BRONZE_PICKAXE = new ToolSword("bronze_pickaxe", TOOl_BRONZE);
-    public static final Item BRONZE_AXE = new ToolSword("bronze_axe", TOOl_BRONZE);
-    public static final Item BRONZE_SHOVEL = new ToolSword("bronze_shovel", TOOl_BRONZE);
-    public static final Item BRONZE_HOE = new ToolSword("bronze_hoe", TOOl_BRONZE);
+    public static final Item BRONZE_PICKAXE = new ToolPickaxe("bronze_pickaxe", TOOl_BRONZE);
+    public static final Item BRONZE_AXE = new ToolAxe("bronze_axe", TOOl_BRONZE);
+    public static final Item BRONZE_SHOVEL = new ToolShovel("bronze_shovel", TOOl_BRONZE);
+    public static final Item BRONZE_HOE = new ToolHoe("bronze_hoe", TOOl_BRONZE);
 
+    /*public static final ItemBlock COPPER_ORE = new ItemBlock(BlockInit.COPPER_ORE);
+    public static final ItemBlock TIN_ORE = new ItemBlock(BlockInit.TIN_ORE);
+    public static final ItemBlock PLATINUM_ORE = new ItemBlock(BlockInit.PLATINUM_ORE);
+
+    public static final ItemBlock RAW_COPPER_BLOCK = new ItemBlock(BlockInit.RAW_COPPER_BLOCK);
+    public static final ItemBlock RAW_TIN_BLOCK = new ItemBlock(BlockInit.RAW_TIN_BLOCK);
+    public static final ItemBlock RAW_PLATINUM_BLOCK = new ItemBlock(BlockInit.RAW_PLATINUM_BLOCK);
+
+    public static final ItemBlock COPPER_ORE_GRANITE = new ItemBlock(BlockInit.COPPER_ORE_GRANITE);
+    public static final ItemBlock TIN_ORE_GRANITE = new ItemBlock(BlockInit.TIN_ORE_GRANITE);
+    public static final ItemBlock PLATINUM_ORE_GRANITE = new ItemBlock(BlockInit.PLATINUM_ORE_GRANITE);
+
+    public static final ItemBlock COPPER_ORE_DIORITE = new ItemBlock(BlockInit.COPPER_ORE_DIORITE);
+    public static final ItemBlock TIN_ORE_DIORITE = new ItemBlock(BlockInit.TIN_ORE_DIORITE);
+    public static final ItemBlock PLATINUM_ORE_DIORITE = new ItemBlock(BlockInit.PLATINUM_ORE_DIORITE);
+
+    public static final ItemBlock COPPER_ORE_ANDESITE = new ItemBlock(BlockInit.COPPER_ORE_ANDESITE);
+    public static final ItemBlock TIN_ORE_ANDESITE = new ItemBlock(BlockInit.TIN_ORE_ANDESITE);
+    public static final ItemBlock PLATINUM_ORE_ANDESITE = new ItemBlock(BlockInit.PLATINUM_ORE_ANDESITE);*/
 
 }

@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import java.util.Random;
 
+import static com.levviata.levviatasores.config.Config.*;
 import static com.levviata.levviatasores.init.BlockInit.*;
 
 public class WorldGenOres implements IWorldGenerator {
@@ -26,44 +27,51 @@ public class WorldGenOres implements IWorldGenerator {
     @Override
     public void generate(Random random, int i, int i1, World world, IChunkGenerator iChunkGenerator, IChunkProvider iChunkProvider) {
         if(world.provider.getDimension() == 0) {
+
             generateOverworld(random, i, i1, world, iChunkGenerator, iChunkProvider);
         }
     }
     private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator iChunkGenerator, IChunkProvider iChunkProvider) {
-        generateOre(
-                TIN_ORE,
-                TIN_ORE.getDefaultState(),
-                world,
-                random,
-                chunkX * bounds,
-                chunkZ * bounds,
-                12,
-                80,
-                random.nextInt(3) + 6,
-                30);
-        generateOre(
-                COPPER_ORE,
-                COPPER_ORE.getDefaultState(),
-                world,
-                random,
-                chunkX * bounds,
-                chunkZ * bounds,
-                12,
-                80,
-                random.nextInt(3) + 6,
-                30);
+        if (propEnableTinGen.getBoolean()) {
+                generateOre(
+                        TIN_ORE,
+                        TIN_ORE.getDefaultState(),
+                        world,
+                        random,
+                        chunkX * bounds,
+                        chunkZ * bounds,
+                        propYMinTin.getInt(),
+                        propYMaxTin.getInt(),
+                        random.nextInt(propTinSizeRandom.getInt()) + propTinSizeSet.getInt(),
+                        propTinChance.getInt());
+        }
+        if (propEnableCopperGen.getBoolean()) {
+                generateOre(
+                        COPPER_ORE,
+                        COPPER_ORE.getDefaultState(),
+                        world,
+                        random,
+                        chunkX * bounds,
+                        chunkZ * bounds,
+                        propYMinCopper.getInt(),
+                        propYMaxCopper.getInt(),
+                        random.nextInt(propPlatinumSizeRandom.getInt()) + propPlatinumSizeSet.getInt(),
+                        propCopperChance.getInt());
+        }
+        if (propEnablePlatinumGen.getBoolean()) {
+                generateOre(
+                        PLATINUM_ORE,
+                        PLATINUM_ORE.getDefaultState(),
+                        world,
+                        random,
+                        chunkX * bounds,
+                        chunkZ * bounds,
+                        propYMinPlatinum.getInt(),
+                        propYMaxPlatinum.getInt(),
+                        random.nextInt(propPlatinumSizeRandom.getInt()) + propPlatinumSizeSet.getInt(),
+                        propPlatinumChance.getInt());
+        }
 
-        generateOre(
-                PLATINUM_ORE,
-                PLATINUM_ORE.getDefaultState(),
-                world,
-                random,
-                chunkX * bounds,
-                chunkZ * bounds,
-                3,
-                32,
-                random.nextInt(3) + 5,
-                4);
     }
     private void generateOre(
             Block ore, IBlockState oreState, World world, Random random, int x, int z, int minY, int maxY, int size, int chances) {
